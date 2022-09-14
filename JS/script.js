@@ -1,4 +1,3 @@
-console.log('running')
 const displayedImage = document.querySelector('.displayed-img')
 const thumbBar = document.querySelector('.thumb-bar')
 
