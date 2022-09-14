@@ -22,7 +22,6 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 btn.addEventListener('click',() => {
-  console.log(btn)
 if (btn.textContent === 'Darkens'){
     overlay.setAttribute('class', "overlay-light");
     btn.textContent = "Lightens";
