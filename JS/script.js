@@ -2,7 +2,7 @@ console.log('running')
 const displayedImage = document.querySelector('.displayed-img')
 const thumbBar = document.querySelector('.thumb-bar')
 
-const imgArray = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic5.jpg"]
+const imgArray = ["img/pic1.jpg", "img/pic2.jpg", "img/pic3.jpg", "img/pic4.jpg", "img/pic5.jpg"]
 const altArray = ["close up of eye", "rocks", "flowers", "anibus","butterfly"];
 
 
@@ -22,12 +22,13 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 btn.addEventListener('click',() => {
+  console.log(btn)
 if (btn.textContent === 'Darkens'){
-    btn.setAttribute('class', "light");
+    overlay.setAttribute('class', "overlay-light");
     btn.textContent = "Lightens";
     overlay.style.opacity = 0.5;  
 } else if (btn.textContent === "Lightens") {
-        btn.setAttribute('class', 'dark');
+        overlay.setAttribute('class', 'overlay');
         btn.textContent = 'Darkens';
         overlay.style.opacity = 0;
 }  else {
@@ -35,7 +36,4 @@ if (btn.textContent === 'Darkens'){
 }
 }
 )
-
-
-
 
